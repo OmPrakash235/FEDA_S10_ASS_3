@@ -1,0 +1,22 @@
+<!--Make a controller with scope and print “Hello World”.-->
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<title>AngularJS</title>
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script type="text/javascript">
+		var module = angular.module('myApp', []);
+		module.controller('homeCtrl', function($scope){
+			$scope.greeting = "Hello World";
+		});
+	</script>
+	</head>
+	<body>
+		<center>
+			<div ng-controller="homeCtrl">
+				{{greeting}}
+			</div>
+		</center>
+	</body>
+</html>
